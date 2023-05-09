@@ -1,9 +1,9 @@
 import React from 'react';
 import { Text, View, Button } from 'react-native';
-import { NativeStackScreenProps } from "@react-navigation/native-stack";
+import { StackScreenProps } from "@react-navigation/stack";
 import { styles } from '../theme/appTheme';
 
-export interface Props extends NativeStackScreenProps<any, any> {
+export interface Props extends StackScreenProps<any, any> {
 
 }
 
@@ -14,7 +14,7 @@ export const Pag1Screen = ( {navigation}: Props)  => {
 
   return (
     <View style={styles.globalMargin}>
-        <Text>Pagina 1 Screen</Text>
+        <Text style= {styles.title} >Pagina 1 Screen</Text>
 
         <Button 
           title='Ir pagina 2'
