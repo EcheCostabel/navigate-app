@@ -4,8 +4,16 @@ import { Pag2Screen } from "../screens/Pag2Screen";
 import { Pag3Screen } from "../screens/Pag3Screen";
 import { PersonScreen } from "../screens/PersonScreen";
 
+export type RouteStackParams = {
+  Pag1Screen: undefined
+  Pag2Screen: undefined
+  Pag3Screen: undefined
+  PersonScreen: {id: number, name: string
+  }
+}
 
-const Stack = createStackNavigator();
+
+const Stack = createStackNavigator<RouteStackParams>();
 
 export const StackNavigator = () => {
   return (
