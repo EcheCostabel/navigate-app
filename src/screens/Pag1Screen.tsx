@@ -24,7 +24,8 @@ export const Pag1Screen = ( {navigation}: Props)  => {
 
         <Text>Navegar con argumentos</Text>
 
-        <View style={{flexDirection: 'row',}}>
+        <View style={{flexDirection: 'row'}}>
+
 
             <TouchableOpacity 
                 style={{
@@ -38,6 +39,7 @@ export const Pag1Screen = ( {navigation}: Props)  => {
 
                   <Text style={styles.bigButtonColor}>Pedro</Text>
             </TouchableOpacity>
+
 
             <TouchableOpacity 
                   style={{
