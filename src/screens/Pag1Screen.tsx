@@ -34,10 +34,10 @@ export const Pag1Screen = ( {navigation}: Props)  => {
                 }} 
                 onPress={() => navigation.navigate('PersonScreen', { //Me voy a esta pagina y mando estos argumentos
                   id: 1, 
-                  name: 'Pedro'
+                  name: 'Popi'
                   })}>
 
-                  <Text style={styles.bigButtonColor}>Pedro</Text>
+                  <Text style={styles.bigButtonColor}>Popi</Text>
             </TouchableOpacity>
 
 
