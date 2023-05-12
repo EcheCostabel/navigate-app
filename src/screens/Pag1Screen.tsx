@@ -22,7 +22,7 @@ export const Pag1Screen = ( {navigation}: Props)  => {
           onPress={() => navigation.navigate('Pag2Screen')}
         />
 
-        <Text>Navegar con argumentos</Text>
+        {/* <Text>Navegar con argumentos</Text> */}
 
         <View style={{flexDirection: 'row'}}>
 
