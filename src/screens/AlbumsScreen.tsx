@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text, View } from 'react-native'
 
-export const AlbumbsScreen = () => {
+export const AlbumsScreen = () => {
   return (
     <View>
         <Text>AlbumScreen</Text>
