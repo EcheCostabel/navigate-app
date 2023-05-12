@@ -75,17 +75,7 @@ export const TabsIos = (  ) => {
       sceneContainerStyle={{
         backgroundColor: 'white' //este es el fondo de lo que esta en cada TabScreen
       }}
-      // screenOptions={{  //esto es lo que esta en los botones de abajo
-      //   tabBarActiveTintColor: colors.primary,
-      //   tabBarStyle: { 
-      //     borderTopColor: colors.primary, 
-      //     borderTopWidth: 0,
-      //     elevation: 0
-      //   },
-      //   tabBarLabelStyle: {
-      //     fontSize: 15
-      //   }
-      // }}
+
       screenOptions={({route}) => ({
         tabBarActiveTintColor: colors.primary,
         tabBarStyle: { 
