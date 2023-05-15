@@ -16,7 +16,6 @@ export const Tab1Screen = () => {
   return (
     <View style={styles.globalMargin}>
         <Text style={styles.title}>Icons</Text>
-        
      <Text>
 
         <Icon name="airplane-outline" size={50} color="#900" />

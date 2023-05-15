@@ -27,6 +27,7 @@ const TabsAndroid = () => {
       barStyle={{
         backgroundColor: colors.primary
       }}
+     
       
       screenOptions={({route}) => ({
         
@@ -37,6 +38,7 @@ const TabsAndroid = () => {
           elevation: 0,
           
         },
+       
         
         tabBarLabelStyle: {
           fontSize: 15,
@@ -62,7 +64,7 @@ const TabsAndroid = () => {
           return <Icon name={iconName} size={20} color={!focused ? 'white' : colors.primary} />
         }
       })}
-      
+     
     
     >
       <BottomTabAndroid.Screen name="Tab1Screen" options={{title: 'Tab1'}} component={Tab1Screen} />
@@ -94,7 +96,8 @@ export const TabsIos = (  ) => {
           elevation: 0
         },
         tabBarLabelStyle: {
-          fontSize: 15
+          fontSize: 15,
+          color: 'white'
         },
         tabBarIcon: ({color,  focused}) => {
           
