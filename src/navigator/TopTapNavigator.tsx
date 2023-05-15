@@ -17,20 +17,28 @@ export const TopTabNavigator = () => {
 
   return (
     <Tab.Navigator
+    
 
         screenOptions={({route}) => ({
+         
             tabBarPressColor: colors.primary,
             tabBarShowIcon: true,
             tabBarIndicatorStyle: {
-                backgroundColor: colors.primary
+                backgroundColor: colors.primary,
+                
             },
+            
             tabBarStyle: { 
                 shadowColor: 'transparent',
-                elevation: 0
+                elevation: 0,
+              },
+              tabBarLabelStyle: {
+                color: colors.primary, // Cambia el color del texto aquí
               },
             tabBarIcon: ({color,  focused}) => {
               let iconName: string = '';
               switch(route.name) {
+
                 case 'Chat':
                   iconName = 'chatbox-ellipses-outline'
                   break;
@@ -47,16 +55,14 @@ export const TopTabNavigator = () => {
 
             }
           })}
-        
-
         sceneContainerStyle={{
-            backgroundColor: 'white'
-        }}
-        
+            backgroundColor: 'white',
+            
+        }}  
     >
       <Tab.Screen name="Chat" component={ChatScreen} />
       <Tab.Screen name="Contacts" component={ContactsScreen} />
       <Tab.Screen name="Albums" component={AlbumsScreen} />
     </Tab.Navigator>
   );
-}
+};

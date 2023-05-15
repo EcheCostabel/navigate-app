@@ -27,6 +27,7 @@ const TabsAndroid = () => {
       barStyle={{
         backgroundColor: colors.primary
       }}
+      
       screenOptions={({route}) => ({
         
         tabBarActiveTintColor: colors.primary,
@@ -39,7 +40,7 @@ const TabsAndroid = () => {
         
         tabBarLabelStyle: {
           fontSize: 15,
-          
+          color: 'white' // Cambia el color del texto aquí REVISAR
         },
         tabBarIcon: ({color,  focused}) => {
           
