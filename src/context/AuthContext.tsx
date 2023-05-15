@@ -29,8 +29,14 @@ export interface AuthContextProps {
 export const AuthContext = createContext({} as AuthContextProps);
 
 
+
+
+
 //Componente proveedor del estado
 export const AuthProvider = ({children}: any) => {
+
+    
+
 
     return (
         <AuthContext.Provider value={{
