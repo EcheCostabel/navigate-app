@@ -39,7 +39,7 @@ export const AuthProvider = ({children}: any) => {
     const [authState, dispatch] = useReducer(authReducer, authInitialState);
 
 
-    const signIn = () => {
+  const signIn = () => {
         dispatch({type: 'signIn'})
     }
 
