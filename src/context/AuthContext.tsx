@@ -1,10 +1,9 @@
 import React, { createContext, useReducer } from 'react'
-import { authReducer } from './AuthReducer';
+import { authReducer } from './authReducer';
 
 
 
 //Definimos que informacion voy a tener aca
-
 export interface AuthState {
     isLoggedIn: boolean;
     username ?: string;
