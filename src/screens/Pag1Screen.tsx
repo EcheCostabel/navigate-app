@@ -24,7 +24,7 @@ export const Pag1Screen = ( {navigation}: Props)  => {
 
         {/* <Text>Navegar con argumentos</Text> */}
 
-        <View style={{flexDirection: 'row'}}>
+        <View style={{flexDirection: 'row', marginTop: 20}}>
 
 
             <TouchableOpacity 
